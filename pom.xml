@@ -24,6 +24,6 @@
     </dependencies>
 
     <build>
-        <finalName>parallel-stream-example</finalName>
+        <finalName>parallel-streams-example</finalName>
     </build>
 </project>
