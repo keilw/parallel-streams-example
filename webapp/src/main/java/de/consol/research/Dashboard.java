@@ -14,7 +14,16 @@ import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 @Path("dashboard")
 public class Dashboard {
 
-    private List<Contract> contracts = TestDataGenerator.makeTestData();
+    private final List<Contract> contracts;
+
+    public Dashboard() {
+        contracts = TestDataGenerator.makeTestData();
+    }
+
+    // Called by the benchmark to set the number of contracts in the test data.
+    public Dashboard(List<Contract> contracts) {
+        this.contracts = contracts;
+    }
 
     private Predicate<Contract> last12months = contract -> contract.getDate().isAfter(now().minusYears(1));
 
@@ -24,6 +33,15 @@ public class Dashboard {
     public int totalSales() {
         return contracts
                 .stream()
+                .filter(contract -> contract.getDate().isAfter(now().minusYears(1)))
+                .mapToInt(Contract::getPriceInCent)
+                .sum();
+    }
+
+    // Called by the benchmark to compare the throughput with the totalSales() method.
+    public int parallelTotalSales() {
+        return contracts
+                .parallelStream()
                 .filter(contract -> contract.getDate().isAfter(now().minusYears(1)))
                 .mapToInt(Contract::getPriceInCent)
                 .sum();
