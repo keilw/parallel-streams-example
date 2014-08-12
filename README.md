@@ -12,4 +12,4 @@ The WAR is created in `webapp/target/parallel-streams-example.war`. It was teste
 Benchmarks can be run with
 
     mvn clean package
-    java -jar benchmark/target/benchmarks.jar .*MyBenchmark.* -f 1
+    java -jar benchmarks/target/benchmarks.jar .*MyBenchmark.* -f 1
