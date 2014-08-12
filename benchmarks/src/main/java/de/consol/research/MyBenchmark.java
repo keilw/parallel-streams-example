@@ -61,7 +61,7 @@ public class MyBenchmark {
     @Benchmark
     @BenchmarkMode(Mode.Throughput)
     @OutputTimeUnit(TimeUnit.MILLISECONDS)
-    public int totalSalesSequentiall10000() {
+    public int totalSalesSequential10000() {
         return dashboard10000.totalSales();
     }
 
@@ -89,7 +89,7 @@ public class MyBenchmark {
     @Benchmark
     @BenchmarkMode(Mode.Throughput)
     @OutputTimeUnit(TimeUnit.MILLISECONDS)
-    public int totalSalesParallell10000() {
+    public int totalSalesParallel10000() {
         return dashboard10000.parallelTotalSales();
     }
 
