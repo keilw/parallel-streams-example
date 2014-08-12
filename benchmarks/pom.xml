@@ -8,11 +8,11 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>benchmark</artifactId>
+    <artifactId>benchmarks</artifactId>
     <packaging>jar</packaging>
 
 
-    <name>JMH benchmarks for the Parallel Streams Example</name>
+    <name>benchmarks</name>
 
     <prerequisites>
         <maven>3.0</maven>
@@ -39,7 +39,7 @@
     </dependencies>
 
     <properties>
-        <jmh.version>0.9.5</jmh.version>
+        <jmh.version>0.9.6</jmh.version>
     </properties>
 
     <build>
