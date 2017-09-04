@@ -2,7 +2,6 @@ package de.consol.research;
 
 import java.util.List;
 import java.util.Spliterator;
-import java.util.Spliterators;
 import java.util.function.Consumer;
 
 // Example implementation of a custom spliterator.
