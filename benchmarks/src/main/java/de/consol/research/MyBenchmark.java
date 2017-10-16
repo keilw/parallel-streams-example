@@ -40,21 +40,21 @@ public class MyBenchmark {
     @Benchmark
     @BenchmarkMode(Mode.Throughput)
     @OutputTimeUnit(TimeUnit.MILLISECONDS)
-    public int totalSalesSequential10() {
+    public int totalSalesSequential010() {
         return dashboard10.totalSales();
     }
 
     @Benchmark
     @BenchmarkMode(Mode.Throughput)
     @OutputTimeUnit(TimeUnit.MILLISECONDS)
-    public int totalSalesSequential100() {
+    public int totalSalesSequential0100() {
         return dashboard100.totalSales();
     }
 
     @Benchmark
     @BenchmarkMode(Mode.Throughput)
     @OutputTimeUnit(TimeUnit.MILLISECONDS)
-    public int totalSalesSequential5000() {
+    public int totalSalesSequential05000() {
         return dashboard5000.totalSales();
     }
 
@@ -68,21 +68,21 @@ public class MyBenchmark {
     @Benchmark
     @BenchmarkMode(Mode.Throughput)
     @OutputTimeUnit(TimeUnit.MILLISECONDS)
-    public int totalSalesParallel10() {
+    public int totalSalesParallel010() {
         return dashboard10.parallelTotalSales();
     }
 
     @Benchmark
     @BenchmarkMode(Mode.Throughput)
     @OutputTimeUnit(TimeUnit.MILLISECONDS)
-    public int totalSalesParallel100() {
+    public int totalSalesParallel0100() {
         return dashboard100.parallelTotalSales();
     }
 
     @Benchmark
     @BenchmarkMode(Mode.Throughput)
     @OutputTimeUnit(TimeUnit.MILLISECONDS)
-    public int totalSalesParallel5000() {
+    public int totalSalesParallel05000() {
         return dashboard5000.parallelTotalSales();
     }
 
