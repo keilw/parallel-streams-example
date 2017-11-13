@@ -5,7 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>de.consol.research</groupId>
+        <groupId>com.packtpub.performance</groupId>
         <artifactId>parallel-streams-example</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>

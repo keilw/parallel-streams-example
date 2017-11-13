@@ -1,4 +1,4 @@
-package de.consol.research;
+package com.packtpub.performance.stream;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

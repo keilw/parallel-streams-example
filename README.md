@@ -1,7 +1,7 @@
 parallel-streams-example
 ========================
 
-Example code for https://speakerdeck.com/fstab/java-8-mehrere-prozessorkerne-effizient-nutzen-mit-lambdas-und-streams
+Example code for Java EE 8 High Performance
 
 A deployable WAR file can be built with
 

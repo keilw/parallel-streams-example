@@ -1,4 +1,4 @@
-package de.consol.research;
+package com.packtpub.performance.stream;
 
 public enum State {
     BW, // Baden-Württemberg

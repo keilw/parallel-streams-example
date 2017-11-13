@@ -1,4 +1,4 @@
-package de.consol.research;
+package com.packtpub.performance.stream;
 
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.runner.Runner;
@@ -6,12 +6,15 @@ import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 
+import com.packtpub.performance.stream.Contract;
+import com.packtpub.performance.stream.Dashboard;
+
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
-import static de.consol.research.State.BY;
+import static com.packtpub.performance.stream.State.BY;
 import static java.time.LocalDate.now;
 
 @org.openjdk.jmh.annotations.State(Scope.Benchmark)

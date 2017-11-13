@@ -1,9 +1,9 @@
-package de.consol.research;
+package com.packtpub.performance.stream;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static de.consol.research.State.*;
+import static com.packtpub.performance.stream.State.*;
 import static java.time.LocalDate.now;
 
 public class TestDataGenerator {
